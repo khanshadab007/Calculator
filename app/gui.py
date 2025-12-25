@@ -140,7 +140,7 @@ def start_app():
             return "break"
 
         # ------- ENTER --------
-        if keysym == "Return":
+        if keysym in ("Return","equal"):
             on_equal()
             btn, bg = button_map["="]
             flash_button(btn, bg)
